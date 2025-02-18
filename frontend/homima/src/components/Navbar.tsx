@@ -1,25 +1,18 @@
 import * as React from 'react'
-import { AppBar, Toolbar, Typography, Box, Button} from '@mui/material';
 import {Link } from '@tanstack/react-router'
 
 function Navbar() {
     return (
-        <AppBar position="static">
-            
-                <Toolbar sx={{justifyContent: 'space-between'}}>
-                    <Typography variant="h5" noWrap>
-                        <Link to="/" style={{textDecoration: 'none', color: 'inherit'}}>
-                        Homima
-                        </Link>
-                    </Typography>
-                    <Box>
-                        <Button color="inherit" component={Link} to="/">Home</Button>
-                        <Button color="inherit" component={Link} to="/create-room">Create a room</Button>
-                        <Button color="inherit" component={Link} to="/about">About</Button>
-                    </Box>
-                </Toolbar>
-
-        </AppBar>
+        <nav className='bg-linear-to-bl from blue-300 to-blue-500'>
+          <div className='max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8'>
+            <div className='flex items-center justify-between h-16'>
+              <div className='flex-shrink-0'>
+                <Link to="/" className="text-white text-2xl font-bold no-underline">Homima</Link>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </nav>
     )
 }
 
