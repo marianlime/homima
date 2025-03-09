@@ -1,16 +1,16 @@
-import * as React from 'react'
+import * as React from 'react';
 import Navbar from '../components/Navbar';
 
 function Homepage() {
-    return ( 
+    return (
         <>
-        <div>
-        <Navbar/>
-        </div>
-        <div style={{ padding: '20px'}}>
-            <Typography variant="h4">Welcome to Homima, your home cinema</Typography>
-            <Typography variant="body1"> Use the navbar to create a room or learn more about the app</Typography>
-        </div>
+            <div>
+                <Navbar />
+            </div>
+            <div className="p-5">
+                <h1 className="text-2xl font-bold">Welcome to Homima, your home cinema</h1>
+                <p className="text-base">Use the navbar to create a room or learn more about the app</p>
+            </div>
         </>
     );
 }
